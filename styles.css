@@ -6,11 +6,11 @@
 }
 
 :root {
-    /* imbus Brand Colors - based on website analysis */
-    --primary-green: #00a651;
-    --secondary-green: #00c95f;
-    --accent-green: #66d9a4;
-    --dark-green: #007a3d;
+    /* imbus Brand Colors - exakte Farben von der originalen Website */
+    --primary-green: #007c3f;
+    --secondary-green: #009a4d;
+    --accent-green: #00b85a;
+    --dark-green: #005c30;
     --dark-gray: #1f2937;
     --medium-gray: #6b7280;
     --light-gray: #f3f4f6;
@@ -133,32 +133,39 @@ body {
 .hero-subtitle {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
-    font-size: var(--font-size-xl);
-    font-weight: 500;
 }
 
-.location {
-    position: relative;
-    padding-left: var(--spacing-lg);
+.event-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(10px);
+}
+
+.location, .date, .time {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--white);
+    gap: var(--spacing-sm);
 }
 
 .location::before {
     content: "📍";
-    position: absolute;
-    left: 0;
-}
-
-.date {
-    position: relative;
-    padding-left: var(--spacing-lg);
 }
 
 .date::before {
     content: "📅";
-    position: absolute;
-    left: 0;
+}
+
+.time::before {
+    content: "🕘";
 }
 
 .hero-description {
@@ -547,9 +554,12 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-subtitle {
-        flex-direction: column;
-        gap: var(--spacing-sm);
+    .event-info {
+        padding: var(--spacing-md);
+    }
+    
+    .location, .date, .time {
+        font-size: var(--font-size-base);
     }
     
     .countdown {
