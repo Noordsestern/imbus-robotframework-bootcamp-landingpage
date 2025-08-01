@@ -1,11 +1,11 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-# Robot Framework Meetup Website - Copilot Instructions
+# Robot Framework Bootcamp Website - Copilot Instructions
 
-This is a static website project for a Robot Framework Meetup event hosted by imbus AG in Köln, Germany.
+This is a static website project for a Robot Framework Bootcamp event hosted by imbus AG in Köln, Germany.
 
 ## Project Context
-- **Event**: Robot Framework Meetup Köln
+- **Event**: Robot Framework Bootcamp Köln
 - **Date**: August 28, 2025
 - **Host**: imbus Rheinland GmbH
 - **Target**: German-speaking Robot Framework community

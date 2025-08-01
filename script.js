@@ -51,11 +51,11 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const comments = formData.get('comments');
     
     // Create email content
-    const subject = encodeURIComponent('Anmeldung Robot Framework Meetup Köln - 28. August 2025');
+    const subject = encodeURIComponent('Anmeldung Robot Framework Bootcamp Köln - 28. August 2025');
     
     let emailBody = `Hallo,
 
-hiermit melde ich mich für das Robot Framework Meetup am 28. August 2025 bei imbus Rheinland an.
+hiermit melde ich mich für das Robot Framework Bootcamp am 28. August 2025 bei imbus Rheinland an.
 
 PERSÖNLICHE DATEN:
 Name: ${name}

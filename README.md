@@ -1,10 +1,10 @@
-# Robot Framework Meetup Köln Website
+# Robot Framework Bootcamp Köln Website
 
-This website is created for the Robot Framework Meetup in Köln on August 28, 2025, hosted by imbus Rheinland GmbH.
+This website is created for the Robot Framework Bootcamp in Köln on August 28, 2025, hosted by imbus Rheinland GmbH.
 
 ## About the Event
 
-The Robot Framework Meetup is a free community event featuring:
+The Robot Framework Bootcamp is a free community event featuring:
 - Parallel workshops (Robot Framework Bootcamp, Library Development, Advanced Features)
 - Networking opportunities
 - BBQ on the rooftop terrace

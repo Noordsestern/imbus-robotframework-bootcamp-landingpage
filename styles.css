@@ -79,10 +79,35 @@ body {
     padding: var(--spacing-sm) 0;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-separator {
+    color: var(--medium-gray);
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
 .logo-img {
     height: 40px;
     width: auto;
     opacity: 1 !important;
+    display: block;
+    margin: 0;
+}
+
+.rf-logo {
+    height: 40px;
 }
 
 .logo-text {
@@ -597,6 +622,18 @@ body {
     .footer-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    
+    .logo-container {
+        gap: var(--spacing-sm);
+    }
+    
+    .logo-img {
+        height: 32px;
+    }
+    
+    .rf-logo {
+        height: 32px;
     }
     
     .nav {
