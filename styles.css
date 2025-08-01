@@ -7,9 +7,10 @@
 
 :root {
     /* imbus Brand Colors - based on website analysis */
-    --primary-blue: #1e3a8a;
-    --secondary-blue: #3b82f6;
-    --accent-blue: #60a5fa;
+    --primary-green: #00a651;
+    --secondary-green: #00c95f;
+    --accent-green: #66d9a4;
+    --dark-green: #007a3d;
     --dark-gray: #1f2937;
     --medium-gray: #6b7280;
     --light-gray: #f3f4f6;
@@ -81,6 +82,22 @@ body {
 .logo-img {
     height: 40px;
     width: auto;
+    opacity: 1 !important;
+}
+
+.logo-text {
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.footer-logo-text {
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
 }
 
 .nav {
@@ -96,12 +113,12 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--primary-blue);
+    color: var(--primary-green);
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
     color: var(--white);
     padding: 120px 0 var(--spacing-2xl);
     text-align: center;
@@ -184,7 +201,7 @@ body {
 .cta-button {
     display: inline-block;
     background: var(--white);
-    color: var(--primary-blue);
+    color: var(--primary-green);
     padding: var(--spacing-md) var(--spacing-xl);
     border-radius: var(--radius-lg);
     text-decoration: none;
@@ -203,7 +220,7 @@ body {
 .section-title {
     font-size: var(--font-size-3xl);
     font-weight: 700;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     text-align: center;
     margin-bottom: var(--spacing-xl);
 }
@@ -227,13 +244,13 @@ body {
     margin-bottom: var(--spacing-md);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-    border-left: 4px solid var(--secondary-blue);
+    border-left: 4px solid var(--secondary-green);
 }
 
 .program-time {
     font-size: var(--font-size-xl);
     font-weight: 700;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     min-width: 80px;
     flex-shrink: 0;
 }
@@ -283,7 +300,7 @@ body {
 .address h3 {
     font-size: var(--font-size-xl);
     font-weight: 600;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -330,7 +347,7 @@ body {
 .registration-info h3 {
     font-size: var(--font-size-xl);
     font-weight: 600;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     margin-bottom: var(--spacing-md);
 }
 
@@ -355,7 +372,7 @@ body {
 
 .email-link {
     display: inline-block;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     text-decoration: none;
     font-weight: 600;
     font-size: var(--font-size-lg);
@@ -382,7 +399,7 @@ body {
 .registration-form h3 {
     font-size: var(--font-size-xl);
     font-weight: 600;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     margin-bottom: var(--spacing-lg);
     text-align: center;
 }
@@ -413,12 +430,12 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--secondary-blue);
+    border-color: var(--secondary-green);
 }
 
 .submit-button {
     width: 100%;
-    background: var(--primary-blue);
+    background: var(--primary-green);
     color: var(--white);
     padding: var(--spacing-md);
     border: none;
@@ -430,7 +447,7 @@ body {
 }
 
 .submit-button:hover {
-    background: var(--secondary-blue);
+    background: var(--secondary-green);
 }
 
 /* Contact Section */
@@ -448,7 +465,7 @@ body {
 .about-imbus h3 {
     font-size: var(--font-size-xl);
     font-weight: 600;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     margin-bottom: var(--spacing-md);
 }
 
@@ -470,7 +487,7 @@ body {
 }
 
 .contact-item a:hover {
-    color: var(--primary-blue);
+    color: var(--primary-green);
     text-decoration: underline;
 }
 
@@ -497,6 +514,7 @@ body {
     height: 32px;
     width: auto;
     filter: brightness(0) invert(1);
+    opacity: 1 !important;
 }
 
 .footer-links {

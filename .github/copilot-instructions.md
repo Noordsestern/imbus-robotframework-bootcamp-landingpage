@@ -34,7 +34,8 @@ This is a static website project for a Robot Framework Meetup event hosted by im
 - Keep interactions lightweight and performant
 
 ## Brand Guidelines
-- Primary color: #1e3a8a (imbus blue)
+- Primary color: #00a651 (imbus green)
+- Secondary color: #00c95f (lighter imbus green)
 - Font: Inter (from Google Fonts)
 - Professional, clean, and modern design
 - Use imbus logo and branding elements appropriately

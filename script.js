@@ -145,7 +145,7 @@ function showConfirmationMessage() {
     
     modal.innerHTML = `
         <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
-        <h3 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.5rem;">E-Mail-Programm geöffnet</h3>
+        <h3 style="color: #00a651; margin-bottom: 1rem; font-size: 1.5rem;">E-Mail-Programm geöffnet</h3>
         <p style="color: #6b7280; margin-bottom: 1.5rem;">
             Ihr E-Mail-Programm sollte sich mit einer vorausgefüllten Nachricht geöffnet haben. 
             Bitte senden Sie die E-Mail ab, um Ihre Anmeldung zu vervollständigen.
@@ -155,7 +155,7 @@ function showConfirmationMessage() {
             <strong>RL_Vertrieb@imbus.de</strong> kontaktieren.
         </p>
         <button onclick="this.closest('.overlay').remove()" style="
-            background: #1e3a8a;
+            background: #00a651;
             color: white;
             border: none;
             padding: 0.75rem 1.5rem;
@@ -216,8 +216,8 @@ function animateOnScroll() {
 document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll();
     
-    // Add loading class to images for better UX
-    const images = document.querySelectorAll('img');
+    // Add loading class to images for better UX (exclude logo images)
+    const images = document.querySelectorAll('img:not(.logo-img):not(.footer-logo-img)');
     images.forEach(img => {
         img.addEventListener('load', function() {
             this.style.opacity = '1';
