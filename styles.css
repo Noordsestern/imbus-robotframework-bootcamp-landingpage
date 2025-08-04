@@ -170,6 +170,24 @@ body {
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: var(--radius-lg);
     backdrop-filter: blur(10px);
+    position: relative;
+    min-width: 300px;
+}
+
+.event-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('koelner-wappen-hd.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    z-index: -1;
+    border-radius: var(--radius-lg);
 }
 
 .event-info .location, .event-info .date, .event-info .time {
@@ -575,6 +593,22 @@ body {
 .footer-bottom p {
     opacity: 0.6;
     font-size: var(--font-size-sm);
+}
+
+.footer-bottom .attribution {
+    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-xs);
+}
+
+.footer-bottom .attribution a {
+    color: var(--white);
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-bottom .attribution a:hover {
+    opacity: 1;
 }
 
 /* Responsive Design */
