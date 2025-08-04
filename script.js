@@ -47,6 +47,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const phone = formData.get('phone');
     const company = formData.get('company');
     const workshop = formData.get('workshop');
+    const themenwunsch = formData.get('themenwunsch');
     const dietary = formData.get('dietary');
     const comments = formData.get('comments');
     
@@ -76,12 +77,21 @@ Unternehmen: ${company}`;
             'bootcamp': 'Robot Framework Bootcamp - Prüfungsvorbereitung',
             'library': 'Bibliotheksentwicklung',
             'advanced': 'Erweiterte Robot Framework Features',
+            'eigener-wunsch': 'Eigener Themenwunsch',
             'keine-praeferenz': 'Keine Präferenz'
         };
         emailBody += `
 
 WORKSHOP-PRÄFERENZ:
 ${workshopTexts[workshop] || workshop}`;
+
+        // Add custom topic details if selected
+        if (workshop === 'eigener-wunsch' && themenwunsch) {
+            emailBody += `
+
+THEMENWUNSCH:
+${themenwunsch}`;
+        }
     }
 
     if (dietary) {
@@ -279,4 +289,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
+
+// Workshop selection handler - Show/hide custom topic field
+document.addEventListener('DOMContentLoaded', function() {
+    const workshopSelect = document.getElementById('workshop');
+    const themenwunschGroup = document.getElementById('themenwunsch-group');
+    
+    if (workshopSelect && themenwunschGroup) {
+        workshopSelect.addEventListener('change', function() {
+            if (this.value === 'eigener-wunsch') {
+                themenwunschGroup.style.display = 'block';
+                document.getElementById('themenwunsch').setAttribute('required', 'required');
+            } else {
+                themenwunschGroup.style.display = 'none';
+                document.getElementById('themenwunsch').removeAttribute('required');
+                document.getElementById('themenwunsch').value = '';
+            }
+        });
+    }
 });
