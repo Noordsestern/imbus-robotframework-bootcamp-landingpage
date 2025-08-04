@@ -172,7 +172,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.location, .date, .time {
+.event-info .location, .event-info .date, .event-info .time {
     display: flex;
     align-items: center;
     font-size: var(--font-size-lg);
@@ -181,15 +181,15 @@ body {
     gap: var(--spacing-sm);
 }
 
-.location::before {
+.event-info .location::before {
     content: "📍";
 }
 
-.date::before {
+.event-info .date::before {
     content: "📅";
 }
 
-.time::before {
+.event-info .time::before {
     content: "🕘";
 }
 
